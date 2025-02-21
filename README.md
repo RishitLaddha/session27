@@ -151,7 +151,7 @@ The Transformer model in this project is a simplified decoder-only architecture 
 5. **Training Routine:**  
    Similar to the CNN, the Transformer model uses a custom training loop. The loop processes batches of token sequences, computes the logits using the custom Transformer, and calculates the loss using cross-entropy. The training logs provide clear evidence of convergence over several epochs.
 ### Training log
-
+```python
 ========== Running Custom CNN Training ==========
 Training Custom CNN on MNIST (training for 5 epochs)...
 Epoch 1/5
@@ -218,7 +218,7 @@ Epoch 4/5
 Epoch 5/5
 ------------------------------------------------------------
 [Transformer] Epoch 5: Avg Loss = 6.9366
-
+```
 
 ### Summary of the Implementation
 
