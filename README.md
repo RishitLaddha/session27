@@ -150,6 +150,75 @@ The Transformer model in this project is a simplified decoder-only architecture 
 
 5. **Training Routine:**  
    Similar to the CNN, the Transformer model uses a custom training loop. The loop processes batches of token sequences, computes the logits using the custom Transformer, and calculates the loss using cross-entropy. The training logs provide clear evidence of convergence over several epochs.
+### Training log
+
+========== Running Custom CNN Training ==========
+Training Custom CNN on MNIST (training for 5 epochs)...
+Epoch 1/5
+------------------------------------------------------------
+Train Epoch: 0 [32/200 (16%)]	Loss: 3.094869
+Train Epoch: 0 [64/200 (32%)]	Loss: 2.472507
+Train Epoch: 0 [96/200 (48%)]	Loss: 2.626276
+Train Epoch: 0 [128/200 (64%)]	Loss: 2.372254
+Train Epoch: 0 [160/200 (80%)]	Loss: 2.450282
+Train Epoch: 0 [192/200 (96%)]	Loss: 2.183089
+Train Epoch: 0 [200/200 (100%)]	Loss: 2.229546
+Epoch 2/5
+------------------------------------------------------------
+Train Epoch: 1 [32/200 (16%)]	Loss: 2.388907
+Train Epoch: 1 [64/200 (32%)]	Loss: 2.098429
+Train Epoch: 1 [96/200 (48%)]	Loss: 2.050860
+Train Epoch: 1 [128/200 (64%)]	Loss: 2.281639
+Train Epoch: 1 [160/200 (80%)]	Loss: 2.262065
+Train Epoch: 1 [192/200 (96%)]	Loss: 2.259228
+Train Epoch: 1 [200/200 (100%)]	Loss: 1.983148
+Epoch 3/5
+------------------------------------------------------------
+Train Epoch: 2 [32/200 (16%)]	Loss: 2.056813
+Train Epoch: 2 [64/200 (32%)]	Loss: 1.998691
+Train Epoch: 2 [96/200 (48%)]	Loss: 2.009512
+Train Epoch: 2 [128/200 (64%)]	Loss: 2.150127
+Train Epoch: 2 [160/200 (80%)]	Loss: 2.052437
+Train Epoch: 2 [192/200 (96%)]	Loss: 1.921052
+Train Epoch: 2 [200/200 (100%)]	Loss: 2.363904
+Epoch 4/5
+------------------------------------------------------------
+Train Epoch: 3 [32/200 (16%)]	Loss: 1.915274
+Train Epoch: 3 [64/200 (32%)]	Loss: 1.890828
+Train Epoch: 3 [96/200 (48%)]	Loss: 1.728729
+Train Epoch: 3 [128/200 (64%)]	Loss: 1.969294
+Train Epoch: 3 [160/200 (80%)]	Loss: 2.047466
+Train Epoch: 3 [192/200 (96%)]	Loss: 1.839756
+Train Epoch: 3 [200/200 (100%)]	Loss: 1.729787
+Epoch 5/5
+------------------------------------------------------------
+Train Epoch: 4 [32/200 (16%)]	Loss: 1.700428
+Train Epoch: 4 [64/200 (32%)]	Loss: 1.818130
+Train Epoch: 4 [96/200 (48%)]	Loss: 1.585354
+Train Epoch: 4 [128/200 (64%)]	Loss: 1.856126
+Train Epoch: 4 [160/200 (80%)]	Loss: 1.693486
+Train Epoch: 4 [192/200 (96%)]	Loss: 1.667623
+Train Epoch: 4 [200/200 (100%)]	Loss: 1.490531
+Test set: Average loss: 1.8798, Accuracy: 15/50 (30.00%)
+
+========== Running Custom Transformer Training ==========
+Training Custom Transformer on toy text data (training for 5 epochs)...
+Epoch 1/5
+------------------------------------------------------------
+[Transformer] Epoch 1: Avg Loss = 6.9377
+Epoch 2/5
+------------------------------------------------------------
+[Transformer] Epoch 2: Avg Loss = 6.9374
+Epoch 3/5
+------------------------------------------------------------
+[Transformer] Epoch 3: Avg Loss = 6.9372
+Epoch 4/5
+------------------------------------------------------------
+[Transformer] Epoch 4: Avg Loss = 6.9369
+Epoch 5/5
+------------------------------------------------------------
+[Transformer] Epoch 5: Avg Loss = 6.9366
+
 
 ### Summary of the Implementation
 
